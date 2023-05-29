@@ -1,0 +1,7 @@
+#+BRAIN_PARENTS: ORG
+#+BEGIN_SR C NIM to start a code remove the space before the C
+#+END_SR C end the snippet
+
+#+BEGIN_SRC NIM to start a code remove the space before the C
+#+END_SRC end the snippet
+

@@ -1,0 +1,4 @@
+#+BRAIN_CHILDREN: emacs cmake LLDB NIM org-brain ORG magit shell
+
+#+BRAIN_PARENTS: index
+

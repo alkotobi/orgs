@@ -1,0 +1,7 @@
+#+BRAIN_PARENTS: documentations
+Cx;g open
+q close 
+tab  open any line head info
+g to updat current , G update all
+enter or dd to view details of any line
+

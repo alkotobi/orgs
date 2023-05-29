@@ -1,0 +1,7 @@
+#+BRAIN_PARENTS: documentations
+* debug
+:PROPERTIES:
+:ID:       BD112E54-15E2-4DDC-8426-49A61BDDEC7A
+:END:
+nim c --debugger:native  file _name.nim
+

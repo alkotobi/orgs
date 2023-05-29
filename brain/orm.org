@@ -1,0 +1,4 @@
+#+BRAIN_CHILDREN: db
+
+#+BRAIN_PARENTS: index
+

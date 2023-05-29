@@ -1,0 +1,6 @@
+#+BRAIN_PARENTS: Qt%20Wrapper
+:RESOURCES:
+- [[file+emacs:~/dev/nim/nimQt/cpp/gui.cpp][gui.cpp]]
+:END:
+
+

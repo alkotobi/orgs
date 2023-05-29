@@ -1,0 +1,23 @@
+#+BRAIN_PARENTS: ORG
+C-c | create a table
+* this did not work for me
+:PROPERTIES:
+:ID:       BD6F22DE-6CBD-4668-943F-1FEF4D92F307
+:END:
+If you want to force the comma as a field separator, press C-u C-c |.
+If you want to force TAB as a field separator, press C-u C-u C-c |.
+If you want to force a specific number of spaces – say 3 – use C-u 3 C-c |.
+* this worked:
+:PROPERTIES:
+:ID:       AA76FAEF-17EE-4FB9-8857-17130E92CAE9
+:END:
+With the cursor in the A field, pressing M-<right> will move the A column to the right:
+With the cursor in the first row, pressing M-<down> will move the first row down:
+with the cursor initially in the B cell, S-M-<right> will insert a new column between A and B
+S-M-<down> when cursor is in the first row will insert a new row at the beginning of the table
+|-+-| this is a header
+
+| <10>  | <20>                |
+|       | lhgslkjdhglkjshkjfh |
+|-+-|
+|       |                     |

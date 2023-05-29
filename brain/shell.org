@@ -1,0 +1,6 @@
+#+BRAIN_PARENTS: documentations
+mv source destination --> rename a file
+rm source --> delete a file
+cp source destination -->copy a file
+rm -r to remove a dir
+

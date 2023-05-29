@@ -1,0 +1,9 @@
+#+BRAIN_PARENTS: documentations
+lldb <exec name>
+b <source_file>:line ;; break poin
+run -Q start debuging
+c continue
+n next line
+po print variable
+s step inside
+

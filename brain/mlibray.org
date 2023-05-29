@@ -1,0 +1,4 @@
+#+BRAIN_PARENTS: db
+[[file+emacs:~/dev/nim/nimQt/nim/mlibrary.nim][MLibray.nim]]
+MVariant
+MTable

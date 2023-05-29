@@ -1,0 +1,15 @@
+#+BRAIN_PARENTS: documentations
+* config
+:PROPERTIES:
+:ID:       36512CD2-8238-4082-ABF7-AF7AE042A592
+:END:
+mkdir build
+cd build
+cmake ../
+* build
+:PROPERTIES:
+:ID:       C7999445-881D-4661-B3EA-16665885DDC2
+:END:
+cd build
+cmake --build .
+cmake -DCMAKE_BUILD_TYPE=Debug .. 

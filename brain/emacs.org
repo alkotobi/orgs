@@ -1,0 +1,22 @@
+#+BRAIN_CHILDREN: emacs%20cheatsheet
+
+#+BRAIN_PARENTS: documentations
+| key           | description                                             |
+| M-,           | find referance                                          |
+| M-.           |                                                         |
+| M-up / down : | switch lines position                                   |
+| f1            | for help then b to show all chortcut for actulal buffer |
+| Mx ielm       | lisp env                                                |
+| Cx 5,2        | create new window                                       |
+| CxCe          | eval last expression                                    |
+| Cz            | desable/enable  evil keys                               |
+| CMJ           | switch buffer                                           |
+| Cu            | scroll up                                               |
+| Cd            | scroll down                                             |
+| Cy            | past                                                    |
+| Ch f          | describe a function                                     |
+| M< M>         | begin of buffer and end of buffer                       |
+| Cx SPC        | move to last global edited line                         |
+| Cmd [ , Cmd ] | go to last edited                                       |
+| V             | in View mode select a line                              |
+| v             | start selection                                         |
