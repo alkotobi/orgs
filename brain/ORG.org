@@ -1,4 +1,175 @@
-#+BRAIN_CHILDREN: ORG%20Tables code
+#+BRAIN_CHILDREN: ORG%20Tables code programing
 
 #+BRAIN_PARENTS: documentations
+
+* help and change seatings
+:PROPERTIES:
+:ID:       942BF2E5-89A0-4159-873B-310211BABBC8
+:END:
+F1-v
+* export:
+:PROPERTIES:
+:ID:       C2576807-8AD4-44CF-BCBF-E3707AF13C8E
+:END:
+C-c C-e
+* looking up a different location keeping current visibility:
+:PROPERTIES:
+:ID:       5BCB210F-F27D-4DDD-BC55-3EF092025202
+:END:
+C-c C-j (org-goto) for looking up a different location in the current org-file,
+* lists 
+:PROPERTIES:
+:ID:       8BC2BA25-502B-40C2-9214-3C4EDAD1A28C
+:END:
+ - list item
+ - another item
+   - sub-item
+     1. also enumerated
+     2. if you like
+ - [ ] yet to be done [] space inside
+ - [X] item which is done [] X inside
+M-RET new list item
+M-S-RET create checkbox
+M-LEFT/RIGHT/UP/DOWN move item
+C-c - cycle item type OR turn into list item
+* sparse trees:
+:PROPERTIES:
+:ID:       A22C6836-7D5B-4BF3-B95F-6809CB17425F
+:END:
+** Filtering
+:PROPERTIES:
+:ID:       254D87D4-6A19-43AA-BFFC-8BE77B2180AF
+:END:
+C-c / Filter in sparse trees
+C-c / r Filter using Regular Expressions
+** Moving in results
+:PROPERTIES:
+:ID:       451BF6C9-BFB4-44F4-AFD3-957B1151D2C6
+:END:
+M-g n goto next match
+M-g o goto previous match
+** property search
+:PROPERTIES:
+:ID:       219F59BF-DFDC-44DE-A2BA-1D4D3FEEA4FC
+:END:
+C-c a L time sorted view of buffer
+* time stamps when taking notes:
+:PROPERTIES:
+:ID:       1541A2F3-02A3-431B-B61E-B18973E9BD54
+:END:
+C-c C-x . start timer
+C-c C-x - insert list item with time
+M-<RET> insert heading with time
+~~C-c C-x ,~ ~~toggle timer pause
+~~C-u C-c C-x ,~ ~stop timer
+also handy:
+C-c C-x ; set countdown
+* move elements
+:PROPERTIES:
+:ID:       4CE20847-5D35-4F28-89A2-604CBF987205
+:END:
+M-UP/DOWN move up/down with subitems
+M-LEFT promote
+M-RIGHT demote
+M-S-LEFT/RIGHT promote/demote with subitems
+* headline:
+:PROPERTIES:
+:ID:       2F5FF223-735E-4C86-A286-033D65155498
+:END:
+use M-RET (org-meta-return) to create a new headline at the same level as the one
+above it,or a first-level headline if the document doesn’t have headlines yet.
+* todo:
+:PROPERTIES:
+:ID:       B38249EA-3BED-4EC0-99D3-B0F47D61A15B
+:END:
+M-shift-RET to call org-insert-todo-heading
+* link:
+:PROPERTIES:
+:ID:       0FAE2B4B-9407-4065-8E7A-039F7CC285B2
+:END:
+A special bracket syntax is used when linking:
+[ [link][description] ] romeve spaces
+Try moving the cursor over the link and press C-c C-o for org-open-at-point
+You can also link to local files. Try visiting another file—for example,
+your emacs initialization file. Then hit C-c l to call org-store-link.
+You'll see a message that a link was stored to the current location in the file
+you're visiting.
+
+Then switch back to your org-mode buffer and paste the link using C-c C-l to call
+org-insert-link. (You may need to press the arrow keys to scroll through and find
+the link you just recorded.)
+* Tags:
+:PROPERTIES:
+:ID:       372D3BEB-C5C8-4A35-BFD5-DA64ABDFBA80
+:END:
+** make a tag:
+:PROPERTIES:
+:ID:       4B9A371F-C088-436E-B017-57C2ABAE8C4B
+:END:
+Tags are added with the C-c C-c command
+** search for a tag:
+:PROPERTIES:
+:ID:       0C331EE4-FB89-416C-9487-A5CB995F0141
+:END:
+The C-c \ command is used to prompt for a tag search expression,
+then display a "sparse tree" of headlines that contain the tags specified in
+a search.
+A sparse tree means that the entire document is folded as much as possible,
+but the selected information is made visible along with the headline structure
+above it.
+
+The tag search can be a single keyword (for example, HOME) or a Boolean
+expression using & for "and" and '|' for "or",
+for example "HOME | COMPUTER".
+* view:
+:PROPERTIES:
+:ID:       858C471F-047F-4CBA-B67C-FAC920F63B48
+:END:
+overview of your document by pressing shift-TAB.
+* agenda:
+:PROPERTIES:
+:ID:       565FB6AF-59C5-4214-8009-6CCF024200F2
+:END:
+** global todo list
+:PROPERTIES:
+:ID:       2712D8B5-116D-410B-939E-AF04F02BF567
+:END:
+(setq org-agenda-files (list "~/org/work.org"
+                             "~/org/school.org" 
+                             "~/org/home.org"))
+                             The global TODO list
+Press C-c a t to enter the global todo list.
+Org-mode will scan the files in org-agenda-files and present a listing of all
+the open TODO items
+*** mark done:
+:PROPERTIES:
+:ID:       BF38CD4A-F1B3-4479-9F32-F5810C1FED9C
+:END:
+You can move the cursor around to the different todo items,
+and hit "t" to mark an item DONE,
+*** visit the source:
+:PROPERTIES:
+:ID:       96954310-EDDC-4042-B078-4B50CE429911
+:END:
+or hit RET to jump to the source file where the TODO is located.
+** Scheduling tasks and using the agenda
+:PROPERTIES:
+:ID:       8363CBA3-908E-4364-AF69-DAC8FB362219
+:END:
+Let's say I want to schedule "Finish document" for today.
+I move the cursor to the line after the TODO item "Finish document", and hit C-c C-s to run org-schedule.
+The calendar pops up, and I can either enter or click the desired date
+** dispaly todos for the week:
+:PROPERTIES:
+:ID:       A0C1B447-9BDA-429B-AB37-955D2885CEA3
+:END:
+C-c a a for org-agenda. A display of this week's scheduled items are displayed
+** displays the all finished tasks and their completion times
+:PROPERTIES:
+:ID:       1ACFA00D-854A-4185-9FFF-F8FC443AAFF3
+:END:
+"l" (lowercase L) to turn on log display.
+This displays the all finished tasks and their completion times.
+
+
 

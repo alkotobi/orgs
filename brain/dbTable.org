@@ -1,3 +1,7 @@
 #+BRAIN_PARENTS: db
-[[file+emacs:~/dev/nim/nimQt/nim/db/dbTable.nim][dbTable.nim]]
+:RESOURCES:
+- [[file+emacs:~/dev/nim/nimQt/nim/db/dbTable.nim][dbTable.nim]]
+:END:
+
+
 this is the root of any table , contains the id and common routines

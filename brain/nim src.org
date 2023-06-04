@@ -1,7 +1,7 @@
 #+BRAIN_PARENTS: Qt%20Wrapper
 :RESOURCES:
 - [[file+emacs:~/dev/nim/nimQt/nim/mlibrary.nim][mlibrary]]
-- [[file+emacs:~/dev/nim/nimQt/nim/gui.nim][gui.nim]]
+- [[file+emacs:~/dev/nim/nimQt/nim/gui.org][gui]]
 :END:
 
 

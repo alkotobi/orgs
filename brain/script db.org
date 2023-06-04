@@ -1,6 +1,6 @@
 #+BRAIN_PARENTS: db
 :RESOURCES:
-- [[file+emacs:~/dev/nim/nimQt/nim/script/tbl.nim][tbbl.nim]]
+- [[file+emacs:~/dev/nim/nimQt/nim/script/mn.nim][mn.nim]]
 :END:
 
 

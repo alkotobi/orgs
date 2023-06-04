@@ -1,4 +1,4 @@
-#+BRAIN_CHILDREN: cpp script nim%20src
+#+BRAIN_PARENTS: dev
 
-#+BRAIN_PARENTS: index
+#+BRAIN_CHILDREN: cpp script nim%20src
 

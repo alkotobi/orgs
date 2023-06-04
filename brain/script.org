@@ -2,5 +2,33 @@
 :RESOURCES:
 - [[file+emacs:~/dev/nim/nimQt/nim/perser.nim][perser.nim]]
 :END:
-
-
+* todos
+:PROPERTIES:
+:ID:       559E48A1-D1F6-40C1-853F-D0428D4C6687
+:END:
+** TODO perser -n ./file.json
+:PROPERTIES:
+:ID:       37AD07A3-D170-4FCC-A759-7ACE9EF6C5A2
+:END:
+-n new : create new table in file.json
+** TODO perser -u ./file.json
+:PROPERTIES:
+:ID:       19C8C110-062A-4548-AF0F-C5C8AF6A217D
+:END:
+-u update the data in the file.json
+*** TODO the script should give a list of choices:
+:PROPERTIES:
+:ID:       68717815-E67F-4AC3-885E-1537AF19B929
+:END:
+- [ ] add field
+- [ ] remove field
+  - [ ] give list of fields and let choose
+- [ ] edit field
+** perser -m ./file.json ./tableName.nim
+:PROPERTIES:
+:ID:       E1E38085-66A1-4777-B6A3-C32612A1C287
+:END:
+make the table.nim from the json file
+:PROPERTIES:
+:ID:       F4D70CE7-DB82-48B9-AA00-50B96C28E12F
+:END:

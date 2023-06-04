@@ -1,3 +1,3 @@
-#+BRAIN_CHILDREN: Qt%20Wrapper orm documentations
+#+BRAIN_CHILDREN: documentations emacs%20config dev
 
 #+TITLE: Merhab Noureddine Brain
